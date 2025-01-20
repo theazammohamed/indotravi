@@ -1,0 +1,49 @@
+nav {
+    position: fixed;
+    top: 25px;
+    left: 0;
+    width: 100vw;
+    z-index: 10;
+}
+
+
+#navbar {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    .logo {
+        font-family: "Plus Jakarta Sans", serif;
+        font-size: 20px;
+        font-weight: 800;
+        text-transform: uppercase;
+        color: var(--textwhite);
+    }
+
+    .links {
+        display: flex;
+        gap: 30px;
+        padding: 10px 45px;
+        backdrop-filter: blur(25px);
+        border-radius: 30px;
+        border: 1px solid var(--textwhite);
+
+        a {
+            color: var(--textwhite);
+            text-decoration: none;
+
+            &:focus {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
+    }
+}
+
