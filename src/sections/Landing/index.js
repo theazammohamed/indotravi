@@ -11,8 +11,25 @@ function Landing() {
           <h1 className='heading'>Extraordinary natural and cultural charm</h1>
           <span className='subheading'>Exploring Indonesia is an unforgetable adventure.</span>
           <TourSearch/>
+          <div className='excellenceCards'>
+            <div className='item'>
+              <span className='number'>10M+</span>
+              <span className='description'>Total Customers</span>
+            </div>
+            <div className='item'>
+              <span className='number'>09+</span>
+              <span className='description'>Years Of Experience</span>
+            </div>
+            <div className='item'>
+              <span className='number'>12K</span>
+              <span className='description'>Total Destinations</span>
+            </div>
+            <div className='item'>
+              <span className='number'>5.0</span>
+              <span className='description'>Average Rating</span>
+            </div>
+          </div>  
         </div>
-
     </section>
   );
 }

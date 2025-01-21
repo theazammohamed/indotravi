@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import BestLocations from './sections/BestLocations';
 import Landing from './sections/Landing';
 
+// find navbar in components
+// find sections and its related unique components in the same folder of each sections
 
 function App() {
   return (

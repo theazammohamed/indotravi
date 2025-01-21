@@ -20,30 +20,64 @@
         height: 98vh;
         width: 98vw;
         position: absolute;
-        top: 0;
+        top: 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
 
         .heading {
-            font-family: "Montserrat", serif;
-            font-weight: 500;
-            font-size: 60px;
-            width: 45%;
+            font-family: var(--montserrat);
+            font-weight: 600;
+            font-size: 75px;
+            width: 54%;
             color: var(--textwhite);
             text-transform: capitalize;
             text-align: center;
-            filter: drop-shadow(0 0 15px black);
-            padding: 0 0 30px 0;
+            filter: drop-shadow(0 -10px 15px black);
+            padding: 0 0 15px 0;
         }
 
         .subheading {
-            font-family: "Poppins", serif;
+            font-family: var(--poppins);
             font-weight: 300;
             color: var(--textwhite);
             text-transform: capitalize;
             font-size: 20px;
+            filter: drop-shadow(0 0 1px black);
+        }
+    }
+
+    .excellenceCards {
+        position: relative;
+        top: 27%;
+        display: flex;
+        gap: 30px;
+
+        .item {    
+            background-color: var(--textwhite);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            padding: 20px 50px;
+            border-radius: 15px;
+            filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 40%));
+        }
+
+        .number {
+            font-family: var(--montserrat);
+            font-size: 35px;
+            font-weight: 500;
+        }
+
+        .description {
+            font-family: var(--montserrat);
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: -1px;
+            color: var(--grey);
         }
     }
 }

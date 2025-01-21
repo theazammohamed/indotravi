@@ -4,6 +4,8 @@ import './index.scss';
 
 
 function Navbar() {
+
+  // Switch component from Mui
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 70,
     height: 41,

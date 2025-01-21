@@ -43,17 +43,24 @@ table {
 	border-spacing: 0;
 }
 
+// Global Variables
 :root{
+  //  colors
 	--textwhite: #FFFFFF;
   --bgwhite: #F8F8FA;
   --black: #000000;
   --grey: #9CA1B9;
   --buttongrey: #666464;
   --footerblack: #191515;
+  --blue: #1D2244;
+
+  // fonts
+  --poppins: "Poppins", serif;
+  --montserrat: "Montserrat", serif;
 }
 
 .nav-poppins {
-  font-family: "Poppins", serif;
+  font-family: var(--poppins);
   font-weight: 400;
   font-size: 15px;
 }
@@ -66,6 +73,7 @@ table {
 .btn-big {
   padding: 15px 30px;
   border-radius: 25px;
+  font-weight: 500!important;
 }
 
 .btn-small {
@@ -76,4 +84,27 @@ table {
 .btn-long {
   padding: 10px 45px;
   border-radius: 20px;
+}
+
+h2 {
+  font-family: var(--montserrat);
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.subHeader {
+  font-family: var(--poppins);
+  color: var(--grey);
+  font-size: 20px;
+}
+
+p {
+  font-family: var(--poppins);
+  color: var(--grey);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.marginWrap {
+  width: 70%;
 }
