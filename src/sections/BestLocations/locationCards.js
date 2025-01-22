@@ -28,9 +28,11 @@ function LocationCards(){
     return (
         <div className="locationCards">
             {Object.entries(Tours).map(([key, item]) => (
-                <div className='card' key={key} style={{backgroundImage: `url(${item.link})`}}>
-                    <span>{item.location}</span>
-                    <h3>{item.name}</h3>
+                <div className='wrapper' style={{backgroundImage: `url(${item.link})`}}>
+                    <div className='card' key={key}>
+                        <span>{item.location}</span>
+                        <h3>{item.name}</h3>
+                    </div>
                 </div>
           ))}
         </div>

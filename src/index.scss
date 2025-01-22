@@ -53,10 +53,15 @@ table {
   --buttongrey: #666464;
   --footerblack: #191515;
   --blue: #1D2244;
+  
 
   // fonts
   --poppins: "Poppins", serif;
   --montserrat: "Montserrat", serif;
+} 
+
+body {
+  background-color: var(--bgwhite);
 }
 
 .nav-poppins {

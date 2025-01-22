@@ -1,6 +1,7 @@
 import './App.scss';
 import Navbar from './components/Navbar';
 import BestLocations from './sections/BestLocations';
+import HowItWorksSection from './sections/HowItWorks';
 import Landing from './sections/Landing';
 
 // find navbar in components
@@ -12,6 +13,7 @@ function App() {
       <Navbar/>
       <Landing/>
       <BestLocations/>
+      <HowItWorksSection/>
     </div>
   );
 }
