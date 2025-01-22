@@ -1,0 +1,62 @@
+#testimonials {
+    margin: 200px auto 200px auto;
+    display: flex;
+    gap: 40px;
+    justify-content: space-between;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+
+        .customer {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+
+            .right {
+                display: flex;
+                flex-direction: column;
+
+                .name {
+                    font-family: var(--montserrat);
+                    font-weight: 600;
+                    font-size: 25px;
+                }
+
+                .designation {
+                    font-family: var(--poppins);
+                    font-weight: 400;
+                    font-size: 18px;
+                    color: var(--grey);
+                }
+            }
+        }
+
+        .arrows {
+            display: flex;
+            gap: 30px
+            
+        }
+    }
+
+    blockquote {
+        width: 60%;
+        font-family: var(--montserrat);
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 30px;
+        quotes: "“" "”" "‘" "’";
+        position: relative;
+        
+
+        &::after {
+            content: open-quote;
+            font-size: 300px;
+            position:absolute;
+            top: 70px;
+            left: -30px;
+            opacity: 15%;
+        }
+    }
+}

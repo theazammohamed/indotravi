@@ -18,11 +18,11 @@
 //     border-radius: 20px;
 //   }
 
-function Button({text, size, colour, textCol}) {
+function Btn({text, size, colour, textCol}) {
     return (
         <div className={size} style={{backgroundColor: `${colour}`, color: `${textCol}`, fontFamily: "Poppins, serif",
   fontWeight: 400, textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column"}} >{text}</div>
     );
 }
 
-export default Button;
+export default Btn;

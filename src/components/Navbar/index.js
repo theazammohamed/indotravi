@@ -1,6 +1,6 @@
 import { FormControlLabel, styled, Switch } from '@mui/material';
-import Button from '../Button';
 import './index.scss';
+import Btn from '../Button';
 
 
 function Navbar() {
@@ -88,7 +88,7 @@ function Navbar() {
                 control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked/>}
               />
             </div>
-            <Button text="Login" size="btn-medium" colour="white" textCol="black"/>
+            <Btn text="Login" size="btn-medium" colour="white" textCol="black"/>
           </div>
       </div>
     </nav>

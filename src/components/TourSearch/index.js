@@ -6,7 +6,7 @@ import AccountBalanceWalletOutlinedIcon from '@mui/icons-material/AccountBalance
 import PeopleIcon from '@mui/icons-material/People';
 import ExpandMoreOutlinedIcon from '@mui/icons-material/ExpandMoreOutlined';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
-import Button from '../Button';
+import Btn from '../Button';
 
 // use mui icons
         
@@ -45,7 +45,7 @@ function TourSearch() {
                 </div>
                 <ExpandMoreOutlinedIcon sx={{ color: grey[50] }}/>
             </div>
-            <Button className="tourBtn" text="Search" size="btn-big" colour="white" textCol="black"/>
+            <Btn className="tourBtn" text="Search" size="btn-big" colour="white" textCol="black"/>
         </div>
     );
 }
