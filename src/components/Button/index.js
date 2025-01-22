@@ -1,4 +1,4 @@
-// <button text="" size="" colour="" textCol=""/>
+// <Btn text="" size="" colour="" textCol=""/>
 
 // SIZES:
 // .btn-medium {
@@ -20,8 +20,8 @@
 
 function Btn({text, size, colour, textCol}) {
     return (
-        <div className={size} style={{backgroundColor: `${colour}`, color: `${textCol}`, fontFamily: "Poppins, serif",
-  fontWeight: 400, textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column"}} >{text}</div>
+        <button className={size} style={{backgroundColor: `${colour}`, color: `${textCol}`, fontFamily: "Poppins, serif",
+  fontWeight: 400, textAlign: "center", display: "flex", justifyContent: "center", flexDirection: "column"}} type="submit">{text}</button>
     );
 }
 

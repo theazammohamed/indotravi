@@ -1,5 +1,5 @@
 #testimonials {
-    margin: 200px auto 200px auto;
+    margin: 250px auto 300px auto;
     display: flex;
     gap: 40px;
     justify-content: space-between;
@@ -17,6 +17,7 @@
             .right {
                 display: flex;
                 flex-direction: column;
+                gap: 5px;
 
                 .name {
                     font-family: var(--montserrat);

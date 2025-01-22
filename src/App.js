@@ -1,6 +1,8 @@
 import './App.scss';
 import Navbar from './components/Navbar';
 import BestLocations from './sections/BestLocations';
+import Blog from './sections/Blog';
+import Footer from './sections/Footer';
 import HowItWorksSection from './sections/HowItWorks';
 import Landing from './sections/Landing';
 import Testimonials from './sections/Testimonials';
@@ -18,6 +20,8 @@ function App() {
       <HowItWorksSection/>
       <TourPackage/>
       <Testimonials/>
+      <Blog/>
+      <Footer/>
     </div>
   );
 }
