@@ -107,14 +107,14 @@ function Navbar() {
           <div className='logo'>
             IndoTravi
           </div>
-          <div className='links'>
+          <div className='links notForMobile'>
             <a href='#bestLocation' className='nav-poppins'>About</a>
             <a href='#bestLocation' className='nav-poppins'>How it Works?</a>
             <a href='#bestLocation' className='nav-poppins'>Tour Packages</a>
             <a href='#bestLocation' className='nav-poppins'>Services</a>
             <a href='#bestLocation' className='nav-poppins'>Contact</a>
           </div>
-          <div className='nav-right'>
+          <div className='nav-right notForMobile'>
             <div className='languageChange'>
               <FormControlLabel
                 control={<MaterialUISwitch className='switch' sx={{ m: 1 }} defaultChecked/>}

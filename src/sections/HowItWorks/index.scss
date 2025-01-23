@@ -156,3 +156,18 @@
                 }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #howItWorks {
+        flex-direction: column-reverse;
+
+        .tourSearch {
+            margin: 10px 10px!important;
+            gap: 10px!important;
+
+                .item {
+                    padding: 5px 80px 5px 10px!important;
+                }
+            }
+    }
+}

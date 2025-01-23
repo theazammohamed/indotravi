@@ -20,7 +20,13 @@ function Blog() {
             date: "Aug 18, 2022",
             name: "Eco-friendly travel: Make a difference",
             description: "Discover how you can travel responsibly while exploring the world. From eco-lodges to sustainable..."
-        }
+        },
+        item04: {
+            image: "https://images.unsplash.com/photo-1521295121783-8a321d551ad2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            date: "Nov 14, 2022",
+            name: "2023 Travel Trends - what you need to know",
+            description: "2023 taught us valuable life lessons. Plans don't always work out, flexibility in life is key, a..."
+        },
         
     }
 

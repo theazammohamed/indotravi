@@ -61,3 +61,21 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #testimonials {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 0;
+
+        .left {
+            align-items: center;
+        }
+
+        blockquote {
+            display: flex;
+            width: 80%;
+            height: 250px;
+        }
+    }
+}

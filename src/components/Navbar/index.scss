@@ -86,3 +86,22 @@ nav {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    nav {
+        #navbar {
+            padding: 10px 45px;
+            backdrop-filter: blur(25px);
+            border-radius: 30px;
+            border: 1px solid var(--textwhite);
+            width: 85vw;
+        }
+    }
+
+    .backgroundNav {
+        #navbar {
+            border: 1px solid var(--black);
+            transition: 0.5s;
+        }
+    }
+}
+

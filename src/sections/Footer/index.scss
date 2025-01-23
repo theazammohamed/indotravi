@@ -113,3 +113,14 @@ footer {
         justify-content: center;
     }
 }
+
+@media screen and (max-width:1000px) {
+    footer {
+    
+        .top {
+            .right {
+                width: 35%;
+            }
+        }
+    }
+}

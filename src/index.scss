@@ -114,6 +114,8 @@ p {
   width: 70%;
 }
 
+
+
 @media screen and (max-width: 1790px) {
   .marginWrap {
     width: 80%;
@@ -123,5 +125,11 @@ p {
 @media screen and (max-width: 1200px) {
   .marginWrap {
     width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .notForMobile {
+    display: none!important;
   }
 }

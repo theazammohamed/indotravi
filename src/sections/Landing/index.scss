@@ -99,3 +99,16 @@
         }
     }
 }
+
+@media screen and (max-width: 1000px) {
+    #landing .excellenceCards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        width: 95%;
+        top: 35%;
+        
+        .item {
+            padding: 20px 25px;
+        }
+    }
+}
