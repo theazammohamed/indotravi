@@ -46,7 +46,7 @@ function Footer () {
                 <div className='right'>
                     <div className='newsletter'>
                         <div className='header'>
-                            <h4>Newsletter</h4>
+                            <h5>Newsletter</h5>
                             <span className='description'>Don't miss out on the exciting world of travel - subscribe now and embark on a journey of discovery with us.</span>
                         </div>
                         <div className='getEmail'>

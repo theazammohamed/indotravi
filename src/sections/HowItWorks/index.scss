@@ -160,6 +160,25 @@
 @media screen and (max-width: 1000px) {
     #howItWorks {
         flex-direction: column-reverse;
+        gap: 40px;
+    
+        .right {
+            .header {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+
+                .subHeader {
+                    text-align: center;
+                }
+            }
+
+            .list {
+                    display: grid!important;
+                    grid-template-columns: repeat(2, 1fr)!important;
+            }
+
+        }
 
         .tourSearch {
             margin: 10px 10px!important;

@@ -59,7 +59,7 @@ footer {
                         line-height: 25px;
                     }
 
-                    h4 {
+                    h5 {
                         font-family: var(--montserrat);
                         font-weight: 700;
                         color: var(--textwhite);
@@ -116,10 +116,55 @@ footer {
 
 @media screen and (max-width:1000px) {
     footer {
-    
         .top {
             .right {
                 width: 35%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    footer {
+        gap: 20px;
+
+        .top {
+            flex-direction: column;
+            gap: 80px;
+
+            .left {
+                width: 100%;
+                justify-content: space-between;
+
+                .about, .support, .FAQ {
+                    h5 {
+                        text-align: center;
+                        margin-bottom: 40px;
+                    }
+
+                    .items {
+                        align-items: center;
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 100px;
+
+                .newsletter {
+                    width: 70%;
+                    
+                    .header {
+                        text-align: center;
+                        
+                        h5 {
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
             }
         }
     }

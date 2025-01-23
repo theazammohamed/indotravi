@@ -26,5 +26,26 @@
 @media screen and (max-width: 1000px) {
     #bestLocation {
         margin: 370px auto 200px auto;
+           
+        
+            .header {
+                flex-direction: column;
+                align-items: center;
+                gap: 20px;
+        
+                .left {
+                    .subHeader {
+                        text-align: center;
+                    }
+                }
+        
+                .right {
+                    width: 70%;
+
+                    p {
+                       text-align: center;
+                    }
+                }
+            }
     }
 }
