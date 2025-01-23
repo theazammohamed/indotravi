@@ -11,35 +11,35 @@ function Footer () {
                     <div className='about'>
                         <h5>About</h5>
                         <div className='items'>
-                            <a href='#'>About Us</a>
-                            <a href='#'>Blog</a>
-                            <a href='#'>Careers</a>
-                            <a href='#'>Jobs</a>
-                            <a href='#'>In Press</a>
-                            <a href='#'>Gallery</a>
+                            <a href='#bestLocation'>About Us</a>
+                            <a href='#bestLocation'>Blog</a>
+                            <a href='#bestLocation'>Careers</a>
+                            <a href='#bestLocation'>Jobs</a>
+                            <a href='#bestLocation'>In Press</a>
+                            <a href='#bestLocation'>Gallery</a>
                         </div>
                     </div>
                     <div className='support'>
                         <h5>Support</h5>
                         <div className='items'>
-                            <a href='#'>Support</a>
-                            <a href='#'>Contact Us</a>
-                            <a href='#'>Online Chat</a>
-                            <a href='#'>Whatsapp</a>
-                            <a href='#'>Telegram</a>
-                            <a href='#'>Ticketing</a>
-                            <a href='#'>Call Center</a>
+                            <a href='#bestLocation'>Support</a>
+                            <a href='#bestLocation'>Contact Us</a>
+                            <a href='#bestLocation'>Online Chat</a>
+                            <a href='#bestLocation'>Whatsapp</a>
+                            <a href='#bestLocation'>Telegram</a>
+                            <a href='#bestLocation'>Ticketing</a>
+                            <a href='#bestLocation'>Call Center</a>
                         </div>
                     </div>
                     <div className='FAQ'>
                         <h5>FAQ</h5>
                         <div className='items'>
-                            <a href='#'>Account</a>
-                            <a href='#'>Booking</a>
-                            <a href='#'>Payments</a>
-                            <a href='#'>Returns</a>
-                            <a href='#'>Privacy Policy</a>
-                            <a href='#'>Terms & Condition</a>
+                            <a href='#bestLocation'>Account</a>
+                            <a href='#bestLocation'>Booking</a>
+                            <a href='#bestLocation'>Payments</a>
+                            <a href='#bestLocation'>Returns</a>
+                            <a href='#bestLocation'>Privacy Policy</a>
+                            <a href='#bestLocation'>Terms & Condition</a>
                         </div>
                     </div>
                 </div>

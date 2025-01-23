@@ -76,11 +76,11 @@ function Navbar() {
             IndoTravi
           </div>
           <div className='links'>
-            <a href='#' className='nav-poppins'>About</a>
-            <a href='#' className='nav-poppins'>How it Works?</a>
-            <a href='#' className='nav-poppins'>Tour Packages</a>
-            <a href='#' className='nav-poppins'>Services</a>
-            <a href='#' className='nav-poppins'>Contact</a>
+            <a href='#bestLocation' className='nav-poppins'>About</a>
+            <a href='#bestLocation' className='nav-poppins'>How it Works?</a>
+            <a href='#bestLocation' className='nav-poppins'>Tour Packages</a>
+            <a href='#bestLocation' className='nav-poppins'>Services</a>
+            <a href='#bestLocation' className='nav-poppins'>Contact</a>
           </div>
           <div className='nav-right'>
             <div className='languageChange'>
