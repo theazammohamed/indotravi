@@ -53,5 +53,9 @@
 @media screen and (max-width:700px) {
     #bestLocation {
         margin: 550px auto 10px auto;
+
+        .header {
+            text-align: center;
+        }
     }
 }

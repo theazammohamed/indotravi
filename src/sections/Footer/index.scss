@@ -169,3 +169,26 @@ footer {
         }
     }
 }
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 100px 0 40px 0;
+        
+        .top {
+            .left {
+                grid-template-columns: 1fr;
+                
+                .about, .support, .FAQ {
+                    padding: 45px 0;
+                    border-bottom: 1px solid var(--grey);
+                }
+            }
+
+            .right {
+                .newsletter {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

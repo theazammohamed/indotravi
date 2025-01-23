@@ -97,6 +97,10 @@
   .locationCards {
     grid-template-columns: 1fr;
 
+    .card {
+      padding: 25px;
+    }
+
     .wrapper {
       &:first-child {
         grid-column-start: 1;
