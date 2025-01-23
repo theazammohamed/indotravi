@@ -55,7 +55,6 @@ function Navbar() {
     },
     '& .MuiSwitch-track': {
       opacity: 1,
-      backgroundColor:"white",
       '&::before': {
         content: "'De'",
         fontFamily: "Poppins, serif",
@@ -66,7 +65,6 @@ function Navbar() {
         color: "white",
       },
       backgroundColor: '#ffffff',
-      // backdropFilter: `blur(25px)`,
       borderRadius: 20,
       ...theme.applyStyles('dark', {
         backgroundColor: '#8796A5',
@@ -79,7 +77,6 @@ function Navbar() {
     useEffect(() => {
         const handleScroll = () => {
             const landingSection = document.getElementById('landing');
-            const navbar = document.querySelector('nav');
 
             if (landingSection) {
                 const mainBottom = landingSection.offsetTop + landingSection.offsetHeight;
