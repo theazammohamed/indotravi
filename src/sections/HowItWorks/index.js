@@ -35,7 +35,7 @@ function HowItWorksSection() {
                 <div className='wrapper'>
                     <div className='card'>
                         <TourSearch/>
-                        <span className='description'>Embark on a journey to find your dream destination, where adventure and relaxation await, creating memories along the way.</span>
+                        <span className='caption'>Embark on a journey to find your dream destination, where adventure and relaxation await, creating memories along the way.</span>
                     </div>
                 </div>
             </div>

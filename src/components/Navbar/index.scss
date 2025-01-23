@@ -6,6 +6,45 @@ nav {
     z-index: 10;
 }
 
+.backgroundNav {
+    .logo {
+        color: var(--black)!important;
+        transition: 0.5s;
+    }
+
+    .links {
+        border: 1px solid var(--black)!important;
+        transition: 0.5s;
+
+        a {
+            color: var(--black)!important;
+            transition: 0.5s;
+        }
+    }
+
+    .switch {
+        .MuiSwitch-track {
+            opacity: 1;
+            border: 1px solid black!important;
+            border-radius: 15px;
+            background-color: transparent;
+            color: black!important;
+
+            &::before {
+                color: black!important;
+            }  
+        }
+
+        .MuiSwitch-thumb {
+             background-color: black;
+
+             &::before {
+                color: white;
+             }
+        }
+    }
+}
+
 
 #navbar {
     display: flex;

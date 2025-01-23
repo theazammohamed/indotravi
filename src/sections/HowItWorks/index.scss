@@ -14,7 +14,7 @@
             border-radius: 15px;
             justify-content: flex-end;
 
-            .description {
+            .caption {
                 font-family: var(--poppins);
                 color: var(--textwhite);
                 margin: 0 50px 20px 50px;
@@ -58,6 +58,7 @@
 
             .item:hover {
                 background-color: var(--textwhite);
+                filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.4));
             }
 
             .item {
@@ -91,5 +92,33 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 1400px) {
+    #howItWorks {
+        gap: 40px;
+                .wrapper {
+                    width: 100%;
+
+                    .caption {
+                        margin: 0 20px 30px 20px!important;
+                    }
+                }    
+        
+
+        .tourSearch {
+            margin: 20px 15px!important;
+            
+            .item {
+                padding: 0 0px 0 15px!important;
+            }
+        }
+
+        .right {
+            
+        } 
+        
     }
 }

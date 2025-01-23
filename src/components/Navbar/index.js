@@ -1,6 +1,7 @@
 import { FormControlLabel, styled, Switch } from '@mui/material';
 import './index.scss';
 import Btn from '../Button';
+import { useEffect, useState } from 'react';
 
 
 function Navbar() {
@@ -8,7 +9,7 @@ function Navbar() {
   // Switch component from Mui
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 70,
-    height: 41,
+    height: 40,
     padding: 7,
     '& .MuiSwitch-switchBase': {
       margin: 1,
@@ -18,11 +19,14 @@ function Navbar() {
         color: 'black',
         transform: 'translateX(35px)',
         '& .MuiSwitch-thumb:before': {
-          content:'"En"'
+          content:'"En"',
+          borderRadius: 15
         },
         '& + .MuiSwitch-track': {
           opacity: 1,
-          backgroundColor: '#aab4be',
+          border: "1px solid white",
+          borderRadius: 15,
+          backgroundColor: 'transparent',
           ...theme.applyStyles('dark', {
             backgroundColor: '#8796A5',
           }),
@@ -51,6 +55,7 @@ function Navbar() {
     },
     '& .MuiSwitch-track': {
       opacity: 1,
+      backgroundColor:"white",
       '&::before': {
         content: "'De'",
         fontFamily: "Poppins, serif",
@@ -60,8 +65,8 @@ function Navbar() {
         left: 5,
         color: "white",
       },
-      backgroundColor: '#aab4be',
-      backdropFilter: `blur(25px)`,
+      backgroundColor: '#ffffff',
+      // backdropFilter: `blur(25px)`,
       borderRadius: 20,
       ...theme.applyStyles('dark', {
         backgroundColor: '#8796A5',
@@ -69,8 +74,35 @@ function Navbar() {
     },
   }));
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const landingSection = document.getElementById('landing');
+            const navbar = document.querySelector('nav');
+
+            if (landingSection) {
+                const mainBottom = landingSection.offsetTop + landingSection.offsetHeight;
+                const scrollTop = window.scrollY;
+
+                if (scrollTop > mainBottom) {
+                    setIsScrolled(true);
+                } else {
+                    setIsScrolled(false);
+                }
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        // Cleanup on component unmount
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
   return (
-    <nav>
+    <nav className={isScrolled ? 'backgroundNav' : ''}>
       <div id='navbar'>
           <div className='logo'>
             IndoTravi
@@ -85,7 +117,7 @@ function Navbar() {
           <div className='nav-right'>
             <div className='languageChange'>
               <FormControlLabel
-                control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked/>}
+                control={<MaterialUISwitch className='switch' sx={{ m: 1 }} defaultChecked/>}
               />
             </div>
             <Btn text="Login" size="btn-medium" colour="white" textCol="black"/>
