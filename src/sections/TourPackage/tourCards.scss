@@ -97,3 +97,9 @@
         }
     }
 }
+
+@media screen and (max-width: 1080px) {
+    #tourCards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -34,7 +34,7 @@ function HowItWorksSection() {
             <div className='left'>
                 <div className='wrapper'>
                     <div className='card'>
-                        <TourSearch/>
+                        <TourSearch className="tourWidget"/>
                         <span className='caption'>Embark on a journey to find your dream destination, where adventure and relaxation await, creating memories along the way.</span>
                     </div>
                 </div>

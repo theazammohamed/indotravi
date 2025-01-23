@@ -122,3 +122,37 @@
         
     }
 }
+
+@media screen and (max-width: 1080px) {
+    #howItWorks {
+        gap: 20px;
+                .wrapper {
+                    width: 100%;
+
+                    .caption {
+                        margin: 0 10px 30px 10px!important;
+                    }
+                }    
+        
+                .tourSearch {
+                    margin: 10px 10px!important;
+                    gap: 10px!important;
+
+                        .item {
+                            padding: 5px 10px 5px 10px!important;
+                        }
+
+                        .date, .budget, .guests {
+                            svg {
+                                display: none!important;
+                            }
+
+                            .left {
+                                svg {
+                                    display: block!important;
+                                }
+                            } 
+                        }
+                }
+    }
+}

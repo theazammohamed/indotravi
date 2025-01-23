@@ -35,7 +35,7 @@ function TourSearch() {
                 </div>
                 <ExpandMoreOutlinedIcon sx={{ color: grey[50] }}/>
             </div>
-            <div className='item'>
+            <div className='guests item'>
                 <div className='left'>
                     <PeopleIcon sx={{ color: grey[50] }}/>
                     <label>Guests</label>

@@ -90,3 +90,12 @@
         top: 19%;
     }
 }
+
+
+@media screen and (max-width: 1080px) {
+    #landing .excellenceCards {
+        .item {
+            padding: 20px 25px;
+        }
+    }
+}
