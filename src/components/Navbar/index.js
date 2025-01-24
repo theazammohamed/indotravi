@@ -106,14 +106,14 @@ function Navbar() {
   // GSAP Animations
   const { contextSafe } = useGSAP();
 
-  const onEnter = contextSafe(({}) => {
+  const onEnter = contextSafe(() => {
     let tl = gsap.timeline();
 
     tl.to("#navSlide", { xPercent: "-100", duration: 0.5, ease: "expo.out" });
     tl.to(".backdrop", { opacity: 1, duration: 0.5 }, "<");
   });
 
-  const onExit = contextSafe(({}) => {
+  const onExit = contextSafe(() => {
     gsap.to("#navSlide", { xPercent: "100", duration: 0.3 });
     gsap.to(".backdrop", { opacity: 0 });
   });
