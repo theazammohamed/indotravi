@@ -126,11 +126,11 @@ function Navbar() {
           </div>
           <MenuIcon className={`notForDesktop colorChange ${isScrolled ? 'backgroundNav' : ''}`} onClick={onEnter} sx={{color: "white"}}/>
           <div className='links notForMobile'>
-            <a href='#bestLocation' className='nav-poppins'>About</a>
-            <a href='#bestLocation' className='nav-poppins'>How it Works?</a>
-            <a href='#bestLocation' className='nav-poppins'>Tour Packages</a>
-            <a href='#bestLocation' className='nav-poppins'>Services</a>
-            <a href='#bestLocation' className='nav-poppins'>Contact</a>
+            <a href='#bestLocation' className='nav-poppins'>Best Location</a>
+            <a href='#howItWorks' className='nav-poppins'>How it Works?</a>
+            <a href='#tourPackage' className='nav-poppins'>Tour Packages</a>
+            <a href='#testimonials' className='nav-poppins'>Testimonials</a>
+            <a href='#blog' className='nav-poppins'>Blog</a>
           </div>
           <div className='nav-right notForMobile'>
             <div className='languageChange'>
@@ -161,9 +161,11 @@ function Navbar() {
             </svg>
           </div>
           <div className='nav'>
-            <a href="/How-to-book">How to book?</a>
-            <a href="/Register-your-futsal">Register Your Futsal</a>
-            <a href="/FAQ">FAQ</a>
+            <a href='#bestLocation' className='nav-poppins'>Best Location</a>
+            <a href='#howItWorks' className='nav-poppins'>How it Works?</a>
+            <a href='#tourPackage' className='nav-poppins'>Tour Packages</a>
+            <a href='#testimonials' className='nav-poppins'>Testimonials</a>
+            <a href='#blog' className='nav-poppins'>Blog</a>
           </div>
           <div className="socialMedia">
             Follow us on

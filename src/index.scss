@@ -60,6 +60,10 @@ table {
   --montserrat: "Montserrat", serif;
 } 
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bgwhite);
 }
