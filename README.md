@@ -1,6 +1,6 @@
 # IndoTravi Landing Page
 
-This is the implementation of the IndoTravi landing page, as requested. The landing page is fully responsive and built using React, HTML, CSS, and JavaScript. The app includes a mock search form for date, budget, and guest, but it does not connect to a backend.
+This is the implementation of the IndoTravi landing page, as requested. The landing page is fully responsive and built using React, HTML, SASS, and JavaScript. The app includes a mock search form for date, budget, and guest, but it does not connect to a backend.
 
 ## Features:
 - Fully responsive design for mobile, tablet, and desktop views.
