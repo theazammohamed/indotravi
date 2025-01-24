@@ -114,6 +114,10 @@ p {
   width: 70%;
 }
 
+.notForDekstop {
+  display: none;
+}
+
 
 
 @media screen and (max-width: 1790px) {
@@ -131,5 +135,9 @@ p {
 @media screen and (max-width: 1000px) {
   .notForMobile {
     display: none!important;
+  }
+
+  .notForDekstop {
+    display: block;
   }
 }
