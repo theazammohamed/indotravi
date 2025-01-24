@@ -1,5 +1,10 @@
 import './index.scss'
 import Btn from '../../components/Button' 
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/all';
+import { useEffect } from 'react';
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Blog() {
     const Articles = {
@@ -29,6 +34,43 @@ function Blog() {
         },
         
     }
+
+    useEffect(() => {
+        gsap.fromTo(
+            "#blog .blogCards .card",
+            { opacity: 0, y: 50 },
+            {
+                opacity: 1,
+                y: 0,
+                duration: 1,
+                ease: "power3.out",
+                stagger: 0.2, 
+                scrollTrigger: {
+                    trigger: "#blog",
+                    start: "top 80%", 
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse", 
+                },
+            }
+        );
+
+        gsap.fromTo(
+            "#blog .header .subHeader", 
+            { opacity: 0, y: 50 }, 
+            {
+                opacity: 1,
+                y: 0, 
+                duration: 1,
+                ease: "power3.out",
+                scrollTrigger: {
+                    trigger: "#blog",
+                    start: "top 80%", 
+                    end: "bottom 20%",
+                    toggleActions: "play none none reverse", 
+                },
+            }
+        );
+    }, []);
 
     return (
         <section id='blog' className='marginWrap'>

@@ -9,6 +9,7 @@ import Testimonials from './sections/Testimonials';
 import TourPackage from './sections/TourPackage';
 
 // find navbar in components
+
 // find sections and its related unique components in the same folder of each sections
 
 function App() {

@@ -1,3 +1,0 @@
-Put smooth scroll
-
-use rem and em for fonts

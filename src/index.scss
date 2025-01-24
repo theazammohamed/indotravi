@@ -73,22 +73,44 @@ body {
 .btn-medium {
   padding: 10px 25px;
   border-radius: 20px;
+
+  &:hover {
+    background-color: var(--black)!important;
+    color: var(--textwhite)!important;
+  }
 }
 
 .btn-big {
   padding: 15px 30px;
   border-radius: 25px;
   font-weight: 500!important;
+  border: none;
+
+  &:hover {
+    background-color: var(--black)!important;
+    color: var(--textwhite)!important;
+  }
 }
 
 .btn-small {
   padding: 10px 20px;
   border-radius: 20px;
+  border: none;
+
+  &:hover {
+    background-color: var(--textwhite)!important;
+    color: var(--black)!important;
+  }
 }
 
 .btn-long {
   padding: 10px 45px;
   border-radius: 20px;
+
+  &:hover {
+    background-color: var(--textwhite)!important;
+    color: var(--black)!important;
+  }
 }
 
 h2 {

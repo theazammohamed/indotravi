@@ -11,7 +11,6 @@ gsap.registerPlugin(useGSAP);
 
 function Navbar() {
 
-  // Switch component from Mui
   const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     width: 70,
     height: 40,
@@ -97,13 +96,13 @@ function Navbar() {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Cleanup on component unmount
+        
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-  // GSAP Animations
+
   const { contextSafe } = useGSAP();
 
   const onEnter = contextSafe(() => {

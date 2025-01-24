@@ -1,4 +1,7 @@
 import './locationCards.scss'
+import React, { useEffect } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Tours = {
     tour01: {
@@ -24,19 +27,63 @@ const Tours = {
 }
 
 
-function LocationCards(){
-    return (
-        <div className="locationCards">
-            {Object.entries(Tours).map(([key, item]) => (
-                <div className='wrapper' style={{backgroundImage: `url(${item.link})`}} key={key}>
-                    <div className='card'>
-                        <span>{item.location}</span>
-                        <h3>{item.name}</h3>
-                    </div>
-                </div>
-          ))}
-        </div>
+
+// function LocationCards(){
+//     return (
+//         <div className="locationCards">
+//             {Object.entries(Tours).map(([key, item]) => (
+//                 <div className='wrapper' style={{backgroundImage: `url(${item.link})`}} key={key}>
+//                     <div className='card'>
+//                         <span>{item.location}</span>
+//                         <h3>{item.name}</h3>
+//                     </div>
+//                 </div>
+//           ))}
+//         </div>
+//     );
+// }
+
+// export default LocationCards;
+
+gsap.registerPlugin(ScrollTrigger);
+
+function LocationCards() {
+  useEffect(() => {
+    gsap.fromTo(
+      ".locationCards .wrapper",
+      { opacity: 0, x: (i) => (i % 2 === 0 ? -100 : 100) },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 2,
+        ease: "power3.out",
+        stagger: 0.5,
+        scrollTrigger: {
+          trigger: ".locationCards",
+          start: "top 80%",
+          end: "bottom 20%",
+          toggleActions: "play none none reverse",
+        },
+      }
     );
+  }, []);
+
+  return (
+    <div className="locationCards">
+      {Object.entries(Tours).map(([key, item]) => (
+        <div
+          className="wrapper"
+          style={{ backgroundImage: `url(${item.link})` }}
+          key={key}
+        >
+          <div className="card">
+            <span>{item.location}</span>
+            <h3>{item.name}</h3>
+          </div>
+        </div>
+      ))}
+    </div>
+  );
 }
 
 export default LocationCards;

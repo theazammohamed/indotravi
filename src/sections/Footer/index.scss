@@ -34,6 +34,11 @@ footer {
                         font-weight: 300;
                         color: var(--grey);
                         text-decoration: none;
+
+                        &:hover {
+                            color: var(--textwhite);
+                            font-weight: 400;
+                        }
                     }
                 }
                 
@@ -100,6 +105,15 @@ footer {
                 display: flex;
                 gap: 10px;
                 justify-content: end;
+                height: 20px;
+
+                svg {
+                    &:hover {
+                        background-color: var(--textwhite);
+                        color: var(--black);
+                        font-size: 32px;
+                    }
+                }
             }
         }
     }

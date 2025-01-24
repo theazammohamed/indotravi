@@ -1,5 +1,8 @@
+import { ScrollTrigger } from 'gsap/all';
 import './tourCards.scss'
 import StarIcon from '@mui/icons-material/Star';
+import gsap from 'gsap';
+import { useEffect } from 'react';
 
 const Packages = {
     item01: {
@@ -36,7 +39,30 @@ const Packages = {
     },
 }
 
+gsap.registerPlugin(ScrollTrigger);
+
 function TourCards() {
+    useEffect(() => {
+        gsap.utils.toArray('#tourCards .wrapper').forEach((wrapper, index) => {
+            gsap.fromTo(
+                wrapper,
+                { opacity: 0, y: 50 },
+                {
+                    opacity: 1,
+                    y: 0,
+                    duration: 1,
+                    ease: "power3.out",
+                    delay: index * 0.2,
+                    scrollTrigger: {
+                        trigger: wrapper,
+                        start: "top 80%",
+                        toggleActions: "play none none reverse",
+                    }
+                }
+            );
+        });
+    }, []);
+
     return (
         <div id='tourCards'>
             {Object.entries(Packages).map(([key, item]) => (
