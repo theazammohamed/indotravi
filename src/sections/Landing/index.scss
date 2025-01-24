@@ -16,6 +16,7 @@
       width: 98vw;
       border-radius: 15px;
       z-index: -1;
+      object-fit: cover;
     }
   }
 
@@ -169,6 +170,7 @@
             width: 100%;
             top: 33%;
             gap: 15px;
+            padding: 10px 15px;
 
             .item {
                 .description {
