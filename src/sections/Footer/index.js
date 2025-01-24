@@ -56,9 +56,9 @@ function Footer () {
                         </div>
                     </div>
                     <div className='socialIcons'>
-                        <Instagram sx={{ fontSize: 30, color: "white",  backgroundColor: "var(--grey)", borderRadius: "100%" }}/>
-                        <Facebook sx={{ fontSize: 30, color: "white", backgroundColor: "var(--grey)", borderRadius: "100%"  }}/>
-                        <YouTube sx={{ fontSize: 30, color: "white", backgroundColor: "var(--grey)", borderRadius: "100%"  }}/>
+                        <Instagram sx={{ fontSize: 30, color: "white",  backgroundColor: "var(--grey)", padding: "5px", borderRadius: "100%" }}/>
+                        <Facebook sx={{ fontSize: 30, color: "white", backgroundColor: "var(--grey)", padding: "5px", borderRadius: "100%"  }}/>
+                        <YouTube sx={{ fontSize: 30, color: "white", backgroundColor: "var(--grey)", padding: "5px", borderRadius: "100%"  }}/>
                     </div>
                 </div>
             </div>

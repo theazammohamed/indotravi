@@ -114,8 +114,8 @@ p {
   width: 70%;
 }
 
-.notForDekstop {
-  display: none;
+.notForDesktop {
+  display: none!important;
 }
 
 
@@ -137,7 +137,7 @@ p {
     display: none!important;
   }
 
-  .notForDekstop {
-    display: block;
+  .notForDesktop {
+    display: block!important;
   }
 }
